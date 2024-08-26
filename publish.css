@@ -624,6 +624,7 @@ body {
     overflow: hidden;
     user-select: none;
     border-radius: 0px;
+    pointer-events: none;
 }
 
 /* --- contain image instead --- */
