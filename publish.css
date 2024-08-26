@@ -194,9 +194,11 @@ cite {
  Sets the height of any map with an ID of "map."
  This comes directly from the quick start guide: https://leafletjs.com/examples/quick-start/
 */
+/*
 #map {
     height: 450px;
 }
+*/
 
 /*---------------------------------------------------
   READING PANE
@@ -629,11 +631,10 @@ body {
     object-fit: contain;
 }
 
-
 /* ---- banner position setting --- */
 
 /* 
- znybo: 
+ My modifications: 
  Removed the ".mod-header" class from this selection, as it was affecting 
  markdown file embeds as well. 
 */
