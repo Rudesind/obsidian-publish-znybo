@@ -1,4 +1,4 @@
-![[logo_white.png]]
+![600](https://github.com/Rudesind/obsidian-publish-znybo/blob/main/site%20resources/logo_white.png?raw=true)
 
 Configuration for my [Obsidian Publish](https://obsidian.md/publish) site: https://znybo.com.
 
