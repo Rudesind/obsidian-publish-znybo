@@ -1,4 +1,4 @@
-![600](https://github.com/Rudesind/obsidian-publish-znybo/blob/main/site%20resources/logo_white_1920.png?raw=true)
+<p align="center"> <img src="https://github.com/Rudesind/obsidian-publish-znybo/blob/main/site%20resources/logo_white_black_bg_1920.png?raw=true" alt="Logo" width="50%"> </p>
 
 Configuration for my [Obsidian Publish](https://obsidian.md/publish) site: https://znybo.com.
 
