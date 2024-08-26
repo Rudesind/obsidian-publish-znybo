@@ -267,6 +267,10 @@ h2:after {
     border-width: medium;
 }
 
+.profile-image span[alt*="profile-image"] {
+    pointer-events: none;
+}
+
 /*---------------------------------------------------
   SITE HEADER
 ---------------------------------------------------*/
