@@ -163,6 +163,22 @@ cite {
     align-items: center;
 }
 
+/* Styling for custom procreate icon. */
+#procreateSvg {
+    height: 34px;
+    width: 34px;
+}
+
+#procreateSvg path {
+    fill: var(--ax1) !important;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+#procreateContainer:hover #procreateSvg path {
+    fill: var(--ax2) !important;
+}
+
 /*---------------------------------------------------
   FOOTER
 ---------------------------------------------------*/
