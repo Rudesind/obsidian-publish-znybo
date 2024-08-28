@@ -18,6 +18,14 @@ Configuration for my [Obsidian Publish](https://obsidian.md/publish) site: https
 	- [Oswald](https://fonts.google.com/specimen/Oswald)
 - Logo, pictures and other site resources by me.
 
+## Contents
+---
+- [Installation and Setup](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#installation-and-setup)
+- [Font Awesome](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#font-awesome)
+- [Leafletjs](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#leafletjs)
+- [Themes](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#themes)
+- [Site Footer](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#site+footer)
+- [CSS and Snippets](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#css+and+snippets)
 
 ## Installation and Setup
 ---
@@ -120,7 +128,8 @@ You will need to add both the CSS and JavaScript file to the `<head>` of your Ob
 ```html
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
 
-<!-- Make sure you put this AFTER Leaflet's CSS --> <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<!-- Make sure you put this AFTER Leaflet's CSS --> 
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 ```
 
 This can be added to a `publish.js` file in the following format:
@@ -176,6 +185,49 @@ There might be a better way of implementing this, but after hours of testing thi
 ## Themes
 ---
 Adding a theme to an **Obsidian Publish** requires you to add the CSS to your `publish.css` file. Personally I recommend using the [Minimal Publish Themes](https://github.com/kepano/obsidian-minimal-publish), which are publish versions of the popular [Minimal Theme](https://github.com/kepano/obsidian-minimal). These include most of **Minimals** features with a few exceptions (`embed-strict` doesn't seem to work for example).
+
+## Site Footer
+---
+I opted to not use the out of box site footer that comes with **Obsidian Publish**. While you can overwrite / inject HTML into it using `publish.js`, this was challenging, and often had unexpected results. Additionally, I ran into numerous issues where the HTML would render correctly in my browser but not on mobile.
+
+Instead, I opt to create the footer directly in my notes.
+
+### Disable Stock Footer
+You can easily disable to the default "Powered by Obsidian Publish" footer by adding this small block of code to your `publish.css` file:
+
+```css
+.site-footer a {
+	display: none;
+}
+```
+
+### Custom Markdown Footer
+As mentioned previously, trying to update the provided footer using JavaScript had unexpected results and was difficult to maintain. Instead, I add the footer *directly* to the bottom of my notes as HTML.
+
+> [!note]
+> For more information around adding HTML to your notes, see the [official documentation](https://help.obsidian.md/Editing+and+formatting/HTML+content).
+
+For example, here is a simplified "socials" footer:
+
+```html
+    <div class="footer-socials">
+        <a class="fa-brands fa-youtube" href="https://www.youtube.com/" target="_blank"></a>
+        <a class="fa fa-instagram" href="https://www.instagram.com/" target="_blank"></a>
+    </div>
+```
+
+A couple of things to note:
+
+- You'll notice that the class of the `<a>` element contains references to **Font Awesome** icons. You can add linkable icons to your footer using this method, but keep in mind this will only render on your site and not in your vault. 
+- By creating containers using a `<div>` or other elements, you can style your footer in your `publish.css` file by referencing that class. Similar to the above, these changes will only be visible once your changes are published to your site.
+
+To simplify changes, I recommend creating a separate note to store your footer, then use something like [Embed Adjustments by SIRvb](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Embed+Adjustments). Afterwards, you can add your footer to any note with the following line:
+
+```markdown
+![[footer|clean no-link no-title]]
+```
+
+This will embed the file with no title, link or graphics, making appear "seamless" in your note.
 
 ## CSS and Snippets
 ---
