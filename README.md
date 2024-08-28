@@ -24,8 +24,8 @@ Configuration for my [Obsidian Publish](https://obsidian.md/publish) site: https
 - [Font Awesome](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#font-awesome)
 - [Leafletjs](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#leafletjs)
 - [Themes](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#themes)
-- [Site Footer](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#site+footer)
-- [CSS and Snippets](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#css+and+snippets)
+- [Site Footer](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#site-footer)
+- [CSS and Snippets](https://github.com/Rudesind/obsidian-publish-znybo?tab=readme-ov-file#css-and-snippets)
 
 ## Installation and Setup
 ---
