@@ -234,24 +234,6 @@ cite {
 */
 
 /*---------------------------------------------------
-  READING PANE
----------------------------------------------------*/
-
-/* 
- Fixes an issue where the reading pane wasn't taking the entire width.
- I think this had to do with trying to center the reading pane.
-*/
-.publish-renderer>.markdown-preview-view>.markdown-preview-sizer {
-    width: 100%;
-}
-
-/* Center content in the reading pane. */
-.markdown-preview-view {
-    display: flex;
-    justify-content: center;
-}
-
-/*---------------------------------------------------
   PAGE HEADERS
 ---------------------------------------------------*/
 
