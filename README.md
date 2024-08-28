@@ -188,12 +188,12 @@ Adding a theme to an **Obsidian Publish** requires you to add the CSS to your `p
 
 ## Site Footer
 ---
-I opted to not use the out of box site footer that comes with **Obsidian Publish**. While you can overwrite / inject HTML into it using `publish.js`, this was challenging, and often had unexpected results. Additionally, I ran into numerous issues where the HTML would render correctly in my browser but not on mobile.
+I opted not to use the stock **Obsidian Publish** footer. While you can overwrite it using `publish.js`, this was challenging, and often had unexpected results. Additionally, I ran into numerous issues where the HTML would render correctly in my browser but not on mobile.
 
-Instead, I opt to create the footer directly in my notes.
+Instead, I create the footer directly in my notes.
 
 ### Disable Stock Footer
-You can easily disable to the default "Powered by Obsidian Publish" footer by adding this small block of code to your `publish.css` file:
+You can disable stock "Powered by Obsidian Publish" footer by adding this block of code to your `publish.css` file:
 
 ```css
 .site-footer a {
@@ -202,7 +202,7 @@ You can easily disable to the default "Powered by Obsidian Publish" footer by ad
 ```
 
 ### Custom Markdown Footer
-As mentioned previously, trying to update the provided footer using JavaScript had unexpected results and was difficult to maintain. Instead, I add the footer *directly* to the bottom of my notes as HTML.
+As mentioned previously, trying to update the stock footer using JavaScript had unexpected results and was difficult to maintain. Instead, I add the footer *directly* to the bottom of my notes as HTML.
 
 > [!note]
 > For more information around adding HTML to your notes, see the [official documentation](https://help.obsidian.md/Editing+and+formatting/HTML+content).
@@ -227,7 +227,7 @@ To simplify changes, I recommend creating a separate note to store your footer, 
 ![[footer|clean no-link no-title]]
 ```
 
-This will embed the file with no title, link or graphics, making appear "seamless" in your note.
+This will embed the file with no title, link or graphics, making it appear "seamless" in your notes.
 
 ## CSS and Snippets
 ---
