@@ -180,6 +180,17 @@ cite {
     align-items: center;
 }
 
+/* Make footer response based on viewport. */
+@media only screen and (max-width: 400px) {
+    .footer i {
+        font-size: 4vw;
+    }
+
+    .footer a {
+        font-size: 6.5vw;
+    }
+}
+
 /* Styling for custom procreate icon. */
 #procreateSvg {
     height: 24px;
@@ -259,6 +270,17 @@ h2:after {
     content: '\f068\f054';
     color: var(--background-modifier-border);
     padding: 5px;
+}
+
+/* Make header size response by using viewport width. Mobile only. */
+@media only screen and (max-width: 500px) {
+    .markdown-preview-view h1 {
+        font-size: 6vw;
+    }
+
+    .markdown-preview-view h2 {
+        font-size: 5vw;
+    }
 }
 
 /*---------------------------------------------------
