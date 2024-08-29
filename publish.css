@@ -64,27 +64,6 @@
     padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-3)
 }
 
-/* Custom note callout. */
-.callout[data-callout=noteinfo] {
-    --callout-icon: "";
-    position: relative;
-    display: flex;
-    justify-content: center;
-    font-variant-caps: all-small-caps;
-    font-size: var(--font-small);
-    padding: 0;
-    background: 0;
-}
-
-.callout[data-callout=noteinfo] .callout-title {
-    padding: 8px 12px 8px 12px;
-    background: var(--background-primary-alt-1);
-    border: 2px dashed var(--background-primary-alt-1);
-    border-radius: 12px;
-    box-shadow: var(--cbs);
-    color: var(--text-accent);
-}
-
 /*---------------------------------------------------
   CARDS
 ---------------------------------------------------*/
@@ -164,6 +143,27 @@ cite {
 .callout[data-callout="blog"] {
     --callout-color: 177, 98, 134;
     --callout-icon: library-big;
+}
+
+/* Custom note callout. */
+.callout[data-callout=noteinfo] {
+    --callout-icon: "";
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-variant-caps: all-small-caps;
+    font-size: var(--font-small);
+    padding: 0;
+    background: 0;
+}
+
+.callout[data-callout=noteinfo] .callout-title {
+    padding: 8px 12px 8px 12px;
+    background: var(--background-primary-alt-1);
+    border: 2px dashed var(--background-primary-alt-1);
+    border-radius: 12px;
+    box-shadow: var(--cbs);
+    color: var(--text-accent);
 }
 
 /*---------------------------------------------------
