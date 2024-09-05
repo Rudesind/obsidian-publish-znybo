@@ -55,6 +55,8 @@
  Modification to center content in the callout pane. By default callouts are 
  set to "12px 12x 12px 24px," this overrides the "24px" to "12px."
 
+ Note that this padding also affects the title and icon of the callout.
+
  Use:
 
  [!info|center]
